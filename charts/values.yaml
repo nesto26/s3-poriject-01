@@ -148,7 +148,7 @@ database:
     name: postgres
     image:
         repository: "postgres"
-        tag: "10.1"
+        tag: "15.0"
 
     imagePullPolicy: "IfNotPresent"
     main:
