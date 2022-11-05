@@ -1,6 +1,6 @@
 ########### Values file
-PodDisruptionBudget: 1 
-replicas: 1
+PodDisruptionBudget: 3 
+replicas: 2
 espresso_shop_web: 
     name: "espresso-shop-web"
 
@@ -150,7 +150,7 @@ database:
         repository: "postgres"
         tag: "10.1"
 
-    imagePullPolicy: "IfNotPresent"
+    imagePullPolicy: "Always"
     main:
         name:
           configmap: postgres-config
